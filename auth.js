@@ -2,9 +2,9 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('./database');
-require('dotenv').config(); // Load environment variables
+require('dotenv').config(); 
 
-const secret = process.env.JWT_SECRET; // Use the JWT secret from environment variables
+const secret = process.env.JWT_SECRET; 
 
 const registerUser = (username, password, callback) => {
   db.get('SELECT * FROM users WHERE username = ?', [username], (err, user) => {

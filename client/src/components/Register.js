@@ -1,8 +1,7 @@
 // client/src/components/Register.js
 import React, { useState } from 'react';
 import axios from 'axios';
-import './Register.css'; // Import CSS for styling
-
+import './Register.css'; 
 const Register = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');

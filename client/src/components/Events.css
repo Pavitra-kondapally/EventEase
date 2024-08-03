@@ -1,10 +1,9 @@
-/* client/src/components/Events.css */
 
 .events-list {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center; /* Center align the event cards */
+    justify-content: center; 
   }
   
   .event-card {
@@ -13,7 +12,7 @@
     padding: 1rem;
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9; /* Light background color for cards */
+    background-color: #f9f9f9; 
   }
   
   .event-card h3 {
@@ -38,20 +37,20 @@
   }
   
   .event-card-edit {
-    background-color: #007bff; /* Blue for Edit */
+    background-color: #007bff;
   }
   
   .event-card-delete {
-    background-color: #dc3545; /* Red for Delete */
+    background-color: #dc3545;
   }
   
   .event-card-add {
-    background-color: #28a745; /* Green for Add */
+    background-color: #28a745; 
   }
   
   .error-message {
     color: red;
-    text-align: center; /* Center align error messages */
+    text-align: center;
   }
   
   input, textarea {
@@ -60,16 +59,16 @@
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 80%; /* Increase size of input fields */
+    width: 80%; 
   }
   
   input[type="text"], input[type="date"] {
-    height: 2rem; /* Increase height of text and date inputs */
+    height: 2rem; 
   }
   
   textarea {
-    height: 6rem; /* Increase height of textarea */
-    resize: vertical; /* Allow vertical resizing only */
+    height: 6rem; 
+    resize: vertical; 
   }
   
   button {
@@ -87,6 +86,6 @@
   }
   
   h2 {
-    text-align: center; /* Center align the events heading */
+    text-align: center; 
   }
   

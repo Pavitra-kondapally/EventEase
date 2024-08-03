@@ -1,4 +1,4 @@
-// client/src/components/Events.js
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Events.css';
@@ -28,7 +28,7 @@ const Events = () => {
       } catch (err) {
         if (err.response?.status === 401) {
           setError('Please log in to view events.');
-          navigate('/login?message=login'); // Redirect with query parameter
+          navigate('/login?message=login'); 
         } else {
           setError('Error fetching events.');
         }

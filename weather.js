@@ -1,6 +1,6 @@
-// weather.js
 const axios = require('axios');
-const API_KEY = 'your_openweathermap_api_key'; // Replace with your actual OpenWeatherMap API key
+require('dotenv').config(); 
+const API_KEY = process.env.WEATHER_API_KEY; 
 
 const getWeather = async (location) => {
   const url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${'019dd82efc88791ea4bbceb763fcddca'}`;

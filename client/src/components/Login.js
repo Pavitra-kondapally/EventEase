@@ -1,8 +1,7 @@
-// client/src/components/Login.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useLocation, useNavigate } from 'react-router-dom';
-import './Login.css'; // Import CSS for styling
+import './Login.css'; 
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -27,7 +26,7 @@ const Login = () => {
       localStorage.setItem('token', response.data.token);
       setSuccess('Logged in successfully');
       setError('');
-      navigate('/events'); // Redirect to events page or any other page
+      navigate('/events'); 
     } catch (error) {
       setError(error.response?.data?.error || error.message);
       setSuccess('');
@@ -37,7 +36,7 @@ const Login = () => {
   const handleLogout = () => {
     localStorage.removeItem('token');
     setSuccess('Logged out successfully');
-    navigate('/login'); // Redirect to login page after logout
+    navigate('/login'); 
   };
 
   return (
